@@ -27,7 +27,7 @@ Source package (default: http):
 
 BUILD SUCCESSFUL in 2m 23s
 2 actionable tasks: 2 executed
-``
+```
 
 # gradle run
 
