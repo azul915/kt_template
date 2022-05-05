@@ -27,4 +27,26 @@ Source package (default: http):
 
 BUILD SUCCESSFUL in 2m 23s
 2 actionable tasks: 2 executed
+``
+
+# gradle run
+
 ```
+$ docker-compose build
+$ docker-compose up -d
+$ docker-compose exec gradle /bin/bash
+
+(in gradle container)
+# root@container_id:/usr/src/template# /bin/bash build
+```
+
+# fork own repo
+
+```
+git clone https://github.com/userName/Repo New_Repo
+cd New_Repo
+git remote set-url origin https://github.com/userName/New_Repo
+git remote add upstream https://github.com/userName/Repo
+git push origin main
+git push --all
+````
