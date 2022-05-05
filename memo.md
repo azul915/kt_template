@@ -43,10 +43,10 @@ $ docker-compose exec gradle /bin/bash
 # fork own repo
 
 ```
-git clone https://github.com/userName/Repo New_Repo
+git clone https://github.com/azul915/kt_template.git New_Repo
 cd New_Repo
-git remote set-url origin https://github.com/userName/New_Repo
-git remote add upstream https://github.com/userName/Repo
+git remote set-url origin https://github.com/azul915/New_Repo
+git remote add upstream https://github.com/azul915/New_Repo
 git push origin main
 git push --all
 ```
