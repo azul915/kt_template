@@ -42,11 +42,16 @@ $ docker-compose exec gradle /bin/bash
 
 # fork own repo
 
+- リポジトリを作成しておく
+
 ```
 git clone https://github.com/azul915/kt_template.git New_Repo
 cd New_Repo
-git remote set-url origin https://github.com/azul915/New_Repo
-git remote add upstream https://github.com/azul915/New_Repo
-git push origin main
-git push --all
+rm -rf .git
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/azul915/New_Repo.git
+git push -u origin main
 ```
